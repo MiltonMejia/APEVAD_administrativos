@@ -9,4 +9,4 @@ En el panel se generan los reportes solicitados agrupados en las siguientes cate
 <li>Grupos</li>
 </ol>
 
-Cada una de las categorías contienen gráficas con los resultados divididos en grupos, con la posibiidad de descargar la información en un archivo de Excel
+Cada una de las categorías contienen gráficas con los resultados divididos en grupos, con la posibilidad de descargar la información en un archivo de Excel
