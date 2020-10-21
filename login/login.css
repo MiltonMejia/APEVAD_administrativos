@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i);
+
+html
+{
+  font-size: 1.2rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif
+}
+
+.bg-princ {
+  background-color: #FFF;
+}
+
+.btn {
+  background-color: #D29500 !important;
+}
+
+.height-33
+{
+  height: 33%;
+}
+
+.image-fill
+{
+  height: 630px;
+  background: linear-gradient(rgba(210, 151, 0, 0.726), rgba(210, 151, 0, 0.726)), url(../ima/universidad-reforma.jpg);
+  background-repeat: no-repeat;
+  background-size: 170% 120%;
+  background-position: center top;
+  border-radius: 10px 0 0 10px;
+}
+
+.img-log img {
+  width: 40%;
+  height: auto
+}
+
+.floating-label label
+{
+  color:#D29500 !important;
+}
+
+.ccenter {
+  top: 0;
+  left: 0;
+  position: relative;
+  transform: translate(0%, 0%)
+}
+
+.modal-header
+{
+  background-color:#248B54 !important;
+}
+
+.modal {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 ) 
+              url('../ima/carga.gif') 
+              50% 50% 
+              no-repeat;
+}
+
+.modal-backdrop { 
+  display: none !important;    
+}
+
+@media (max-width:1023px)
+{
+  .container
+  {
+    max-width: 100%;
+  }
+  .image-fill {
+    display: none
+  }
+  .height-100
+  {
+    height: 100vh;
+  }
+}
+@media (min-width:768px)
+{
+  .img-log img
+  {
+    width: 25%;
+  }
+}
+@media (min-width:1024px)
+{
+  body
+  {
+    overflow-x: hidden;
+    display: flex;
+  }
+
+  .bg-princ {
+    background-color: #EFEFEF
+  }
+
+  .ccenter {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+
+  .img-log
+  {
+    margin-bottom: 5%;
+  }
+}

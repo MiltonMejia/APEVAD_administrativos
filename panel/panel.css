@@ -1,0 +1,76 @@
+a {
+  cursor: default;
+}
+
+a:hover {
+  background-color: #D29500 !important;
+  color: #fff !important;
+}
+
+.card-header {
+  background-color: #D29500 !important;
+  color: #fff;
+}
+
+.color-uni {
+  background-color: #D29500 !important;
+}
+
+header {
+  background-color: #D29500 !important;
+}
+
+html {
+  font-size: 1.3rem !important;
+}
+
+#btnCerrar {
+  color: #000;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8) url('../ima/carga.gif') 50% 50% no-repeat;
+}
+
+.navdrawer-img {
+  padding: 3em !important;
+}
+
+.active {
+  color: #D29500 !important;
+}
+
+.navbar-brand
+{
+  display: none;
+}
+
+@media (min-width: 1024px)
+{
+  .navbar-brand
+  {
+    display: block;
+  }
+}

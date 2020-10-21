@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/material.min.css" rel="stylesheet">
+  <link href="panel.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-dark navbar-full doc-navbar-default">
+    <button aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler"
+      data-target="#navdrawerDefault" data-toggle="navdrawer"><span class="navbar-toggler-icon"></span></button>
+    <span class="navbar-brand mr-auto" id="txtTitulo">UNIVERSIDAD ALVA EDISON - APEVAD</span>
+    <div class="dropdown dropdown-menu-right">
+      <button class="btn btn-outline-secondary dropdown-toggle text-white" type="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false" id="btnUsuario">Dropdown</button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button id="btnCerrar" class="dropdown-item" type="button">Cerrar Sesión</button>
+      </div>
+  </header>
+
+  <div aria-hidden="true" class="navdrawer" id="navdrawerDefault" tabindex="-1">
+    <div class="navdrawer-content">
+      <div class="navdrawer-header">
+        <div class="navdrawer-img">
+          <img src="../ima/uae-logo-letters.png" class="img-fluid" alt="Universidad Alva Edison">
+        </div>
+        <div class="text-center">UNIVERSIDAD ALVA EDISON - APEVAD</div>
+      </div>
+      <nav class="navdrawer-nav">
+        <a class="nav-link" id="btnInicio"><i class="material-icons md-36 mr-3">dashboard</i>Inicio</a>
+        <a class="nav-link" id="btnAdministrativos"><i
+            class="material-icons md-36 mr-3">business_center</i>Administrativos</a>
+        <a class="nav-link" id="btnDocentes"><i class="material-icons md-36 mr-3">class</i>Docentes</a>
+        <a class="nav-link" id="btnSatisfaccion"><i class="material-icons md-36 mr-3">done_all</i>Satisfacción</a>
+        <a class="nav-link" id="btnPromedioDocentes"><i class="material-icons md-36 mr-3">supervisor_account</i>Promedio
+          Docentes</a>
+        <a class="nav-link" id="btnPromedioAdministrativos"><i
+            class="material-icons md-36 mr-3">supervised_user_circle</i>Promedio Administrativos</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="content-main">
+
+    <div id="divGrupos" class="container p-4 my-5">
+      <h4>Lista de Grupos</h4>
+      <select id="cboGrupos" class="browser-default custom-select">
+        <option></option>
+      </select>
+    </div>
+
+    <div id="chart_div" class="container"></div>
+
+    <div id="divInicio">
+      <div class="container">
+        <div class="card my-5">
+          <div class="card-header">
+            <h4 class="m-0">Información de Evaluación</h5¡4>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr>
+                  <td class="lead">Total de alumnos</td>
+                  <td class="lead" id="txtTotAlum"></td>
+                </tr>
+                <tr>
+                  <td class="lead">Total de docentes</td>
+                  <td class="lead" id="txtTotDoc"></td>
+                </tr>
+                <tr>
+                  <td class="lead">Total de administrativos</td>
+                  <td class="lead" id="txtTotAdmin"></td>
+                </tr>
+                <tr>
+                  <td class="lead">Total de evaluaciones realizadas</td>
+                  <td class="lead" id="txtTotEval"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="dtBasicExample" class="card mb-5">
+          <div class="card-header d-flex border-0">
+            <h4 class="m-0 col-9 d-flex align-items-center">Información de Grupos</h4><input
+              class="form-control col-3 rounded-pill" id="txtBuscar" type="text" placeholder="Buscar grupo..">
+          </div>
+          <div class="card-body p-0">
+            <table class="table-sm table table-striped text-center m-0">
+              <thead>
+                <tr class="card-header">
+                  <th scope="col" class="w-25 text-center">Grupo</th>
+                  <th scope="col" class="w-25 text-center">Total de Alumnos</th>
+                  <th scope="col" class="w-25 text-center">Evaluaciones ingresadas</th>
+                </tr>
+              </thead>
+              <tbody id="tblEvaluacion">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPromedio">
+      <div id="contPromedio" class="container mt-5"></div>
+    </div>
+
+
+    <div class="modal" id="loading"></div>
+
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../js/material.min.js"></script>
+    <script type="text/javascript" src="panel.js"></script>
+    <script type="text/javascript" src="clsPanel.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+
+</html>
